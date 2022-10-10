@@ -32,6 +32,11 @@ class TodoStore {
     }
 
     @action
+    setClearSearchText() {
+        this._searchText = '';
+    }
+
+    @action
     setTodoProps(name, value) { //_todo 에 value를 Setting 하는 함수
         this._todo = {
             ...this._todo, // 변경되지 않는 값은 유지
